@@ -1,0 +1,57 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-primary: #3b82f6; /* Blue 500 */
+  --color-accent: #8b5cf6; /* Violet 500 */
+  --color-surface: #0a0c10;
+  --color-card: #11141b;
+  --color-border: rgba(255, 255, 255, 0.08);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-surface);
+    color: #e2e8f0;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(17, 20, 27, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--color-border);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-linear-to-r from-blue-400 to-violet-400;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-linear-to-r from-blue-600 to-indigo-600 text-white rounded-full font-bold shadow-lg shadow-blue-900/20 hover:shadow-blue-900/40 transition-all;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border border-white/10 rounded-full font-bold hover:bg-white/5 transition-all;
+  }
+
+  .os-window {
+    @apply relative rounded-[2rem] border border-white/10 bg-card overflow-hidden shadow-2xl;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-6 py-20;
+  }
+}

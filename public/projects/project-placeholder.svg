@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Project preview placeholder</title>
+  <desc id="desc">A dark project preview placeholder with a dashboard-style layout.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#101827"/>
+      <stop offset=".55" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#071511"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#34d399"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <g opacity=".12" stroke="#e5e7eb" stroke-width="1">
+    <path d="M0 120h1200M0 240h1200M0 360h1200M0 480h1200M0 600h1200M0 720h1200"/>
+    <path d="M120 0v900M240 0v900M360 0v900M480 0v900M600 0v900M720 0v900M840 0v900M960 0v900M1080 0v900"/>
+  </g>
+  <rect x="110" y="110" width="980" height="680" rx="44" fill="#030712" opacity=".82"/>
+  <rect x="160" y="170" width="220" height="32" rx="16" fill="url(#line)"/>
+  <rect x="160" y="250" width="360" height="38" rx="12" fill="#f8fafc" opacity=".9"/>
+  <rect x="160" y="318" width="500" height="24" rx="12" fill="#94a3b8" opacity=".45"/>
+  <rect x="160" y="364" width="440" height="24" rx="12" fill="#94a3b8" opacity=".3"/>
+  <rect x="160" y="460" width="250" height="170" rx="24" fill="#172033"/>
+  <rect x="460" y="460" width="250" height="170" rx="24" fill="#172033"/>
+  <rect x="760" y="250" width="280" height="380" rx="28" fill="#10231d"/>
+  <path d="M800 570c58-150 102-112 146-220 32 64 54 118 70 220H800Z" fill="url(#line)" opacity=".75"/>
+  <circle cx="860" cy="320" r="42" fill="#38bdf8" opacity=".65"/>
+</svg>
